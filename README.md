@@ -9,15 +9,7 @@ Make sure you have the following installed:
 
 
 ## Getting Started
-Getting Started
 
-Prerequisites
-
-Make sure you have the following installed:
-
-Node.js 18+
-
-npm
 
 1. Clone the Repository
 
