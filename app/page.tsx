@@ -9,7 +9,11 @@ const Page = async ({ searchParams }: SearchProps) => {
   const search = params.search?.trim().toLowerCase() || "";
   const data = await getData(50, 0);
 
-  const filteredPokemon = search ? data.results.filter((pokemon) => pokemon.name.toLowerCase().includes(search)) : data.results.slice(0, 20);
+  const filteredPokemon = search
+    ? data.results.filter((pokemon) =>
+        pokemon.name.toLowerCase().includes(search),
+      )
+    : data.results.slice(0, 20);
 
   return (
     <main className="min-h-screen">
@@ -21,10 +25,7 @@ const Page = async ({ searchParams }: SearchProps) => {
         <PokemonSearch />
 
         {filteredPokemon.length > 0 ? (
-          <div
-            key={search}
-            className="grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
-          >
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {filteredPokemon.map((pokemon, index) => (
               <PokemonCard
                 key={`${search}-${pokemon.name}`}
@@ -35,7 +36,10 @@ const Page = async ({ searchParams }: SearchProps) => {
             ))}
           </div>
         ) : (
-          <div className="animate-fade-in-scale px-4 py-16 text-center sm:py-20">
+          <div
+            key={search}
+            className="fade-in-scale px-4 py-16 text-center sm:py-20"
+          >
             <NotFound />
           </div>
         )}
