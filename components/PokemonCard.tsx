@@ -26,7 +26,7 @@ export default function PokemonCard({name, url,index = 0}: PokemonCardProps) {
             alt={name}
             width={180}
             height={180}
-            loading="eager"
+            loading="eager" 
             className="relative z-10 h-auto w-[75%] max-w-40 object-contain drop-shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3"
           />
         </div>
