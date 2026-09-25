@@ -1,46 +1,58 @@
-Pokemon web
+# Pokémon Web
 
-### Prerequisites
+A responsive Pokémon web application built with Next.js, TypeScript, and the PokéAPI.
+
+## Prerequisites
 
 Make sure you have the following installed:
 
 - Node.js 18+
 - npm
 
-
 ## Getting Started
 
+### 1. Clone the Repository
 
-1. Clone the Repository
-
+```bash
 git clone https://github.com/rakeshboraa/pokemon.git
+```
 
-2. Navigate to the Project
+### 2. Navigate to the Project
 
+```bash
 cd pokemon
+```
 
-3. Install Dependencies
+### 3. Install Dependencies
 
+```bash
 npm install
+```
 
-4. Start the Development Server
+### 4. Start the Development Server
 
+```bash
 npm run dev
+```
 
-Open:
-
-http://localhost:3000
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 The application should now be running locally.
 
-Production Build
+## Production Build
 
 To create a production build:
 
+```bash
 npm run build
+```
 
+To start the production server:
 
+```bash
+npm start
+```
 
-Author
+## Author
 
 Rakesh Bora
