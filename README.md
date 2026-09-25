@@ -17,7 +17,11 @@ Make sure you have the following installed:
 git clone https://github.com/rakeshboraa/pokemon.git
 ```
 
-### 2. Navigate to the Project
+2. Navigate to the Project
+
+Open the project folder in VS Code or your preferred code editor.
+
+Alternatively, you can navigate to the project directory using the terminal:
 
 ```bash
 cd pokemon
